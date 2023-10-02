@@ -100,7 +100,7 @@ export default function Hero(teams: any) {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    border: 1px solid yellow;
+                    border: 1px solid yellow; 
                 }
             `}
         </style>

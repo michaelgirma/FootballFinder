@@ -98,9 +98,9 @@ export default function Hero(teams: any) {
                     width: 100%;
                     height: 50%;
                     flex-direction: column;
-                    align-items: center;
+                    align-items: center; 
                     justify-content: center;
-                    border: 1px solid yellow;
+                    border: 1px solid yellow; 
                 }
             `}
         </style>

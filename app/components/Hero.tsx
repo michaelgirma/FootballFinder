@@ -9,12 +9,12 @@ export default function Hero(teams: any) {
                 {teams.teams.rows.map((team: any) => (
                     <div id='Card' key={team.id}>
                         <div id="ImageContainer">
-                            <a href={team.id}> <img id='Logo' src={team.image} /></a>
+                            <img id='Logo' src={team.image} />
                         </div>
                         <div id="NameContainer">
                             <p id='Name'>{team.name}</p>
                             <div id="LocationContainer">
-                                <p id='Location'>{team.location}</p>
+                                <a href={`/events/${team.location}`}><p id='Location'>{team.location}</p></a>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,6 @@ export default function Hero(teams: any) {
                     align-items: center;
                     justify-content: center;
                     border-radius: 5px;
-                    border: 1px solid blue;
 
                 }
                 #ImageContainer {   
@@ -61,7 +60,6 @@ export default function Hero(teams: any) {
                     overflow: hidden;
                     z-index: 1;
                     justify-content: center;
-                    border: 1px solid green;
                 }
                 #Logo {
                     width: 100%;
@@ -69,7 +67,6 @@ export default function Hero(teams: any) {
                     object-fit: cover;
                     z-index: 1;
                     justify-content: center;
-                    border: 1px solid green;
                 }
                 #Logo:hover {
                     transform: scale(1.1);
@@ -85,7 +82,6 @@ export default function Hero(teams: any) {
                     justify-content: center;
                     background-color: black;
                     z-index: 2;
-                    border: 1px solid red;
                 }
                 #Name {
                     color: white;
@@ -100,7 +96,23 @@ export default function Hero(teams: any) {
                     flex-direction: column;
                     align-items: center;
                     justify-content: center;
-                    border: 1px solid yellow;
+                    text-align: center;
+                    color: white;
+                }
+                #LocationContainer a {
+                    text-decoration: none;
+                }
+                #Location{
+                    color: white;
+                    font-size: 20px;  
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    width: 150px;
+                }
+                #Location:hover{
+                    transform: scale(1.1);
+                    transition: transform 0.3s ease-in-out;
+                    opacity: 0.5;
                 }
             `}
         </style>

@@ -24,7 +24,7 @@ export default function Hero(teams: any) {
             {`
                 #Hero {
                     display: flex;
-                    position: relative;
+                    position: relative; 
                     width: 100vw;
                     height: 100vh;
                     flex-direction: column;

@@ -113,6 +113,7 @@ export default function Hero(teams: any) {
                     transform: scale(1.1);
                     transition: transform 0.3s ease-in-out;
                     opacity: 0.5;
+
                 }
             `}
         </style>

@@ -11,7 +11,7 @@ export default function Hero(teams: any) {
                 </div>
             </div>
             <div id="CardContainer">
-                {teams.teams.rows.map((team: any) => (
+                {teams.teams.rows.map((team: any) => ( 
                     <div id='Card' key={team.id}>
                         <div id="ImageContainer">
                             <a href={team.id}><img id='Logo' src={team.image} /></a>

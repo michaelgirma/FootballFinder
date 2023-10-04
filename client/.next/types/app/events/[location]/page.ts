@@ -1,4 +1,4 @@
-// File: /Users/michaelgirma/Documents/HotelTemplate-main/app/events/[location]/page.tsx
+// File: /Users/michaelgirma/Documents/HotelTemplate-main/client/app/events/[location]/page.tsx
 import * as entry from '../../../../../app/events/[location]/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
